@@ -1,0 +1,42 @@
+Requete type POST , Create
+addresse : http://localhost:3000/rdv/create
+
+{"cle":"concertRockBikini","titre":"Concert Rock bikini","type":"concert","dateDebut":"2018-10-20h10","dateFin":"2018-10-23h10","description":"Concert au bikini, venez nombreux . ","participant":{"pseudo":["Xavier","Zakia","Maxime"]},"coordinates":{"longitude":1.435751515,"latitude":43.615615},"avatar":"http://avatar.com/event/22.jpg"}
+--------------------
+{"cle":"RendezvousAfpa","titre":"Rendez vous Afpa","type":"reunion","dateDebut":"2018-12-10h10","dateFin":"2018-12-12h10","description":"Réunion afpa balma pour le projet","participant":{"pseudo":["Xavier","Zakia","Maxime","BenjaminR","BenjaminB","Thomas","Babacar","Thibault","MathieuG","MathieuP","Carl","Thierry","Solene","Aurore","Jade","Munick"]},"coordinates":{"longitude":4.445751515,"latitude":43.5851785855615},"avatar":"http://avatar.com/event/08.jpg"}
+-------
+{"cle":"ManifestionCapitol","titre":"Manifestation Capitol","type":"manifestation","dateDebut":"2018-15-08h10","dateFin":"2018-15-12h10","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, erat vitae ornare malesuada, ex est tempor felis, at imperdiet neque libero non urna. Praesent tincidunt odio nec libero blandit mattis. Sed et lobortis lorem, ut ultricies nulla. Donec vel quam ac ipsum luctus varius in a justo. Vestibulum ipsum velit, pellentesque eu dictum eleifend, iaculis et lectus. Vivamus lacinia placerat dolor, vel tincidunt urna. Nam tempor felis ipsum, vel lacinia leo feugiat sit amet. Duis eget ligula nibh. ","participant":{"pseudo":["Thibault","Betty","Maxime","Munick","Jade","Babacar"]},"coordinates":{"longitude":1.415751515,"latitude":43.5851785855615},"avatar":"http://avatar.com/event/02.jpg"}
+----------
+{"cle":"greveCgt","titre":"greve Cgt","type":"greve","dateDebut":"2018-10-08h10","dateFin":"2018-10-23h10","description":"Greve pour les conditions des développeurs en entreprise !! ","participant":{"pseudo":["Xavier","Zakia","Maxime"]},"coordinates":{"longitude":1.4157,"latitude":43.5121},"avatar":"http://avatar.com/event/02.jpg"}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Requete type DELETE 
+par cle: /rdv/delete/cle/
+----------------------------------
+http://localhost:3000/rdv/delete/cle/ManifestionCapitol
+
+par id Mongodb : /rdv/delete/id/
+http://localhost:3000/rdv/delete/id/5bc5f364c1c3982010ae0b75
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE
+----------------------------------
+* Requete type PUT by cle: http://localhost:3000/rdv/update/cle/
+----------------------------------
+http://localhost:3000/rdv/update/cle/greveCgt55154
+{"cle":"greveCgt","titre":"greve Cgt","type":"greve","dateDebut":"2018-10-08h10","dateFin":"2018-10-23h10","description":"oi,sdifGreve pour les conditions des développeurs en entreprise !! ","participant":{"pseudo":["Xavier","Zakia","Maxime"]},"coordinates":{"longitude":1.4157,"latitude":43.5121},"avatar":"http://avatar.com/event/02.jpg"}
+--------------------------------------------------------------------
+* Requete type PUT by id (mongodb): http://localhost:3000/rdv/update/id/
+----------------------------------
+http://localhost:3000/rdv/update/id/5bc5f364c1c3982010ae0b75
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Range : 
+latitude :
+[43.54:43.69]
+longitude
+[1.33:1.60]
