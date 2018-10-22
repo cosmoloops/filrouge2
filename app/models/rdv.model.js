@@ -5,7 +5,8 @@ const rdvCoordinateSchema = mongoose.Schema(
 {
 	//MysqlId: String,
 	cle:String,
-    titre: String,
+	titre: String,
+	createur:String,
 	type:String,
 	description:String,
 	dateDebut:String,
@@ -21,5 +22,6 @@ const rdvCoordinateSchema = mongoose.Schema(
 }, {
     timestamps: true
 });
+
 
 module.exports = mongoose.model('rdvCoordinate', rdvCoordinateSchema);

@@ -40,3 +40,6 @@ latitude :
 [43.54:43.69]
 longitude
 [1.33:1.60]
+
+ovh server
+http://nodejs2.afpa-balma.fr/

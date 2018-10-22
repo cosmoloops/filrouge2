@@ -39,5 +39,10 @@ module.exports = (app) => {
 	
 	// Delete a Note with MongoID
 	app.delete('/rdv/delete/id/:id', rdv.deleteMongoId);
+//----------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------
+// DROP DATABASE :
+	app.delete('/rdv/delete/drop', rdv.drop);
+
 	
 }
